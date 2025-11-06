@@ -4,7 +4,6 @@ while True:
     if not (1 <= month <= 12 and 1 <= day <= 31):
         print("Ngày hoặc tháng không hợp lệ!")
         continue
-    s=""
     if (day>=20 and month==1) or (day<=18 and month==2):
         s="Bảo Bình"
     elif (day>=19 and month==2) or (day<=20 and month==3):

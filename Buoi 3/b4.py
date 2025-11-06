@@ -22,7 +22,7 @@ max_avg = max(ds3, key=lambda x: x[1])
 min_avg = min(ds3, key=lambda x: x[1])
 print("Cao nhất:", max_avg)
 print("Thấp nhất:", min_avg)
-
+sx = ds3.copy()
 ds4 = []
 while sx:
     gt_max = max(sx, key=lambda x: x[1])
