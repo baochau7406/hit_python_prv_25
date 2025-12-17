@@ -1,4 +1,3 @@
-
 class myStack:
     def __init__(self, capacity):
         self.capacity = capacity
@@ -9,7 +8,7 @@ class myStack:
 
     def is_Full(self):
         return len(self.stack) == self.capacity
-
+    
     def pop(self):
         if self.is_Empty():
             print("Stack is empty")
@@ -27,6 +26,7 @@ class myStack:
             return None
         else:
             return self.stack[-1]
+        
     def printStack(self):
         if self.is_Empty():
             print("Stack rỗng.")

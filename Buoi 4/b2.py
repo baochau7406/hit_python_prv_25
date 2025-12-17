@@ -2,11 +2,13 @@ strings= input("Nhap tu: ")
 ds= set(strings)
 print(ds)
 
-dem=[]
+d={}
 for i in ds:
-    lan= strings.count(i)
-    dem.append(lan)
-print(dem)
+    if i in d:
+            d[i] += 1
+    else:
+            d[i] = 1
+print(d)
 
 
 

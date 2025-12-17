@@ -1,17 +1,11 @@
-hang= list(input().split())
-print(hang)
-set_ten = set()
-for a in hang:
-    set_ten.add(a)
-print(set_ten)
-t= tuple(set_ten)
-print (t)
-dem= len(t)
-print(f"So luong hang hoa la: {dem} ")
-ban_chay=["Laptop",]
-print (f"San pham ban chay trong kho: {hang[1]} {hang[2]}")
-print (f"San pham khong nam ban chay trong kho: {hang[4]} {hang[0]} {hang[6]}")
-
-
-
-
+s=input("Nhập chuỗi: ")
+a=s.split()
+list1=(list(a))
+print(f"Danh sách hàng hóa là: {list1}")
+set1=set(list1)
+tup1=tuple(set1)
+print(f"Danh sach duy nhat la: {tup1}")
+dem=len(tup1)
+print(f"Co {dem} loai hang hoa")
+print(f"Co 2 san pham ban chay la: {tup1[0], tup1[2]}")
+print(f"San pham co trong kho nhung khong ban chay la: {tup1[1], tup1[3], tup1[4]}")
